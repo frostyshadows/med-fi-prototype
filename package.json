@@ -27,6 +27,7 @@
     },
     "dependencies": {
         "bootstrap": "4.2.1",
+        "bootstrap-select": "file:bootstrap-select",
         "jquery": "3.3.1"
     },
     "devDependencies": {

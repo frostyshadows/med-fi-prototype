@@ -1,0 +1,7 @@
+$grid-columns:      12;
+$grid-gutter-width: 30px;
+
+.active, .btn:hover {
+  background-color: #666;
+  color: white;
+}
