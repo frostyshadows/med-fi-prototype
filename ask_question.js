@@ -4,7 +4,7 @@ document.getElementById("submit-button").addEventListener("click", function() {
   var table = document.getElementById("questions");
 
   // Create an empty <tr> element and add it to the 1st position of the table:
-  var row = table.insertRow(0);
+  var row = table.insertRow(table.rows.length);
 
   // Insert new cell (<td> element) at the 1st of the "new" <tr> element:
   var cell1 = row.insertCell(0);
