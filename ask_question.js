@@ -11,9 +11,13 @@ document.getElementById("submit-button").addEventListener("click", function() {
 
   // Add  HTML to the new cell:
   cell1.innerHTML = 
-    "<div> \
-        <p>" + questionText + "</p> \
-        <p>" + "Asked Feb 24" + "</p> \
-        <p>" + "No answers yet" + "</p> \
-    </div>";
+  '<div class="card" style="width: 18rem;"> \
+  <div class="card-body"> \
+    <h6 class="card-title">' + questionText + '</h6> \
+    <div class="d-flex justify-content-between"> \
+      <p class="text-muted">Asked Feb 24</p> \
+      <p class="text-muted">No answers yet</p> \
+    </div> \
+  </div> \
+</div>';
 }, false);
