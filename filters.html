@@ -18,109 +18,124 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light"></nav>
-  <div class="container">
-    <div class="row">
-        <div class="col-sm-12">
-            <h1>Filters</h1>
+  <button id="question-modal" type="button" class="btn btn-lg" data-toggle="modal" data-target="#exampleModal" >Filters</button>
+  
+  <div id="profiles" class="d-flex flex-column align-items-center"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+        
+        
+          <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>Filters</h1>
+                </div>
+            </div>
+            <div class ="row">
+              <div class="col">
+                <h3>Field of Study</h3>
+              </div>
+            </div>
+            <div class ="row">
+              <div class="col">
+                <select class="selectpicker" id="field" data-style="btn-lg" title="Field of Study">
+                  <option>Computer Science</option>
+                  <option>Engineering</option>
+                  <option>Pharmacy</option>
+                </select>
+              </div>
+            </div>
+            <div class ="row">
+              <div class="col">
+                <h3>Year level</h3>
+              </div>
+             </div>
+            <div class="row">
+              <div class="col">
+              <div class="year">
+                <button type="button" class="btn btn-outline-dark">1st</button>
+                <button type="button" class="btn btn-outline-dark">2nd</button>
+                <button type="button" class="btn btn-outline-dark">3rd</button>
+                <button type="button" class="btn btn-outline-dark">4th</button>
+              </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+              <div class="year2">
+                <button type="button" class="btn btn-outline-dark">Masters</button>
+                <button type="button" class="btn btn-outline-dark">PhD</button>
+              </div>
+              </div>
+            </div>
+            <div class ="row">
+              <div class="col">
+                <h3>Location</h3>
+              </div>
+            </div>
+            <div class ="row">
+              <div class="col">
+                <select class="location selectpicker" data-style="btn-lg" title="Location">
+                  <option>Vancouver</option>
+                  <option>Richmond</option>
+                  <option>Burnaby</option>
+                </select>
+              </div>
+            </div>
+            <div class ="row">
+              <div class="col">
+                <h3>Gender</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+              <div class="gender">
+                <button type="button" class="btn btn-outline-dark">Woman</button>
+                <button type="button" class="btn btn-outline-dark">Man</button>
+                <button type="button" class="btn btn-outline-dark">Non-binary</button>
+                <button type="button" class="btn btn-outline-dark">Other</button>
+              </div>
+              </div>
+            </div>
+            <div class ="row">
+              <div class="col">
+                <h3>Meeting preference</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+              <div class="meeting">
+                <button type="button" class="btn btn-outline-dark">Online</button>
+                <button type="button" class="btn btn-outline-dark">In-person</button>
+              </div>
+              </div>
+            </div>
+            <div class ="row">
+              <div class="col">
+                <h3>Time commitment</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+              <div class="time">
+                <button type="button" class="btn btn-outline-dark">Weekly</button>
+                <button type="button" class="btn btn-outline-dark">Bi-Weekly</button>
+                <button type="button" class="btn btn-outline-dark">Monthly</button>
+              </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <button type="submit-button" class="btn btn-secondary btn-lg" data-dismiss="modal">Submit</button>
+              </div>
+            </div>
+          </div>
+  
         </div>
-    </div>
-    <div class ="row">
-      <div class="col">
-        <h3>Field of Study</h3>
-      </div>
-    </div>
-    <div class ="row">
-      <div class="col">
-        <select class="studyfield selectpicker" data-style="btn-lg" title="Field of Study">
-          <option>Computer Science</option>
-          <option>Engineering</option>
-          <option>Pharmacy</option>
-        </select>
-      </div>
-    </div>
-    <div class ="row">
-      <div class="col">
-        <h3>Year level</h3>
-      </div>
-     </div>
-    <div class="row">
-      <div class="col">
-      <div class="year">
-        <button type="button" class="btn btn-outline-dark">1st</button>
-        <button type="button" class="btn btn-outline-dark">2nd</button>
-        <button type="button" class="btn btn-outline-dark">3rd</button>
-        <button type="button" class="btn btn-outline-dark">4th</button>
-      </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-      <div class="year2">
-        <button type="button" class="btn btn-outline-dark">Masters</button>
-        <button type="button" class="btn btn-outline-dark">PhD</button>
-      </div>
-      </div>
-    </div>
-    <div class ="row">
-      <div class="col">
-        <h3>Location</h3>
-      </div>
-    </div>
-    <div class ="row">
-      <div class="col">
-        <select class="location selectpicker" data-style="btn-lg" title="Location">
-          <option>Vancouver</option>
-          <option>Richmond</option>
-          <option>Burnaby</option>
-        </select>
-      </div>
-    </div>
-    <div class ="row">
-      <div class="col">
-        <h3>Gender</h3>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-      <div class="gender">
-        <button type="button" class="btn btn-outline-dark">Woman</button>
-        <button type="button" class="btn btn-outline-dark">Man</button>
-        <button type="button" class="btn btn-outline-dark">Non-binary</button>
-        <button type="button" class="btn btn-outline-dark">Other</button>
-      </div>
-      </div>
-    </div>
-    <div class ="row">
-      <div class="col">
-        <h3>Meeting preference</h3>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-      <div class="meeting">
-        <button type="button" class="btn btn-outline-dark">Online</button>
-        <button type="button" class="btn btn-outline-dark">In-person</button>
-      </div>
-      </div>
-    </div>
-    <div class ="row">
-      <div class="col">
-        <h3>Time commitment</h3>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-      <div class="time">
-        <button type="button" class="btn btn-outline-dark">Weekly</button>
-        <button type="button" class="btn btn-outline-dark">Bi-Weekly</button>
-        <button type="button" class="btn btn-outline-dark">Monthly</button>
-      </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <button type="button" class="btn btn-secondary btn-lg">Submit</button>
       </div>
     </div>
   </div>
