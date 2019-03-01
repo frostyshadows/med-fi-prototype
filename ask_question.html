@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Bare - Start Bootstrap Template</title>
+  <title>Mentorship Medium Fidelity Prototype</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -17,60 +17,61 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      
-        <div class="navbar-nav" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Answer questions
-                  </a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Your questions
-                      <span class="sr-only">(current)</span>
-                  </a>
-                </li>
-              </ul>
-        </div>
-      </nav>
-    
-    <table id="questions">
-        <tbody>
-        </tbody>
-      </table>
-  <div class="row">
-      <div class="col-sm-4">
-          <button id="question-modal" type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModal" ></button>
+  <nav class="navbar nav-fill w-100 navbar-expand-lg navbar-light bg-light">
+    <div class="navbar-nav nav-fill w-100" id="navbarSupportedContent">
+      <ul class="navbar-nav nav-fill w-100 d-flex flex-row mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Answer questions
+          </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Your questions
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="d-flex flex-column align-items-center">
+    <table id="questions" class="table">
+      <tbody>
+      </tbody>
+    </table>
+    <div class="d-flex flex-row align-items-center">
+      <div class="p-2">
+        <button id="question-modal" type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModal"></button>
       </div>
-      <div class="col-sm-4">
-          <p>Ask a question</p>
+      <div class="p-2">
+        <p>Ask a question</p>
       </div>
-  </div>
-  
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Ask a question</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ask a question</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
             <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
+            </button>
+          </div>
+          <div class="modal-body">
             <textarea class="form-control" id="question-form-input" rows="3" placeholder="Write a question..."></textarea>
-        </div>
-        <div class="modal-footer">
-          <button id="submit-button" type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+          </div>
+          <div class="modal-footer">
+            <button id="submit-button" type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="ask_question.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="ask_question.js"></script>
 
 </body>
 
