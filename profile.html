@@ -1,0 +1,79 @@
+<html>
+
+<head>
+	<!-- Bootstrap core CSS -->
+	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- for some reason bootstrap icons don't work unless i add bootstrap this way -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="ask_question.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="page-header font-weight-bold">
+		<i class="glyphicon glyphicon-chevron-left ml-5"></i>
+		<span class="page-title profile-full-name"></span>
+	</div>
+	
+	<div class="profile-quick-info text-center">
+		<!-- TODO:  get the filename dynamically-->
+		<img class="profile-image" src="assets/placeholder-profile.png" alt="Profile image">
+		<div class="quick-info-header profile-full-name font-weight-bold"></div>
+		<div class="quick-info-text profile-job"></div>
+		<div class="quick-info-text profile-school"></div>
+		<div class="quick-info-text profile-mentorship">
+			<i class="glyphicon glyphicon-ok-sign text-success"></i>
+			Available for mentoring
+		</div>
+		
+		<!-- TODO: figure out the best tag to use for buttons-->
+		<button type="button" class="btn btn-secondary">
+			<i class="glyphicon glyphicon-envelope"></i>
+			Message
+		</button>
+	</div>
+	
+	<hr>
+	
+	<div class="profile-detailed-description text-left ml-5">
+		<span class="description-text">Located in </span>
+		<span class="description-text-bold font-weight-bold profile-location"></span>
+		
+		<div class="description-section-header text-muted font-weight-bold mt-3">BIO</div>
+		<div class="description-text profile-bio"></div>
+		
+		<div class="description-section-header text-muted font-weight-bold mt-3">LINKS</div>
+		<div class="description-text profile-links"> </div>
+		
+		<div class="description-section-header text-muted font-weight-bold mt-3">ASK ME ABOUT</div>
+		<div class="description-text profile-ask"></div>
+		
+		<div class="description-section-header text-muted font-weight-bold mt-3">AFFILIATIONS/VOLUNTEERING</div>
+		<div class="description-text profile-affiliations"></div>
+		
+		<div class="description-section-header text-muted font-weight-bold mt-3">INTERESTS</div>
+		<div class="description-text profile-interests"></div>
+		
+		<div class="description-section-header text-muted font-weight-bold mt-3">AVAILABILITY</div>
+		
+		<div class="description-text">
+			<i class="glyphicon glyphicon-time text-muted"></i>
+			<span class="profile-availability-time"></span>
+		</div>
+		<div class="description-text">
+			<i class="glyphicon glyphicon-globe text-muted"></i>
+			<span class="profile-availability-location"></span>
+		</div>
+	
+	</div>
+	
+	
+	<!-- Bootstrap core JavaScript -->
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="profile.js"></script>
+
+</body>
+
+
+
+</html>
