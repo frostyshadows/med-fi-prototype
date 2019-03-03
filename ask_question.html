@@ -13,6 +13,7 @@
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="ask_question.css" rel="stylesheet">
+  <link href="bottom_nav.css" rel="stylesheet">
 
 </head>
 
@@ -21,7 +22,7 @@
     <div class="navbar-nav nav-fill w-100" id="navbarSupportedContent">
       <ul class="navbar-nav nav-fill w-100 d-flex flex-row mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">Answer questions
+          <a class="nav-link" href="answer_questions_swipe.html">Answer questions
           </a>
         </li>
         <li class="nav-item active">
@@ -46,6 +47,15 @@
         <p>Ask a question</p>
       </div>
     </div>
+
+    <footer class="page-footer fixed-bottom">
+      <div class="d-flex flex-row justify-content-around">
+        <img class="search-button" src="assets/search_grey.png"/>
+        <img class="mail-button" src="assets/mail_grey.png"/>
+        <img class="help-button" src="assets/help_black.png"/>
+        <img class="person-button" src="assets/person_grey.png"/>
+      </div>
+    </footer>
 
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -72,6 +82,7 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="ask_question.js"></script>
+    <script src="bottom_nav.js"></script>
 
 </body>
 

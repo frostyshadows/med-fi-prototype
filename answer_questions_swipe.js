@@ -1,7 +1,18 @@
-var questions = [
-   "Question 2?",
-   "Question 3?",
-   "Question 4?"
+var questions = [{
+      "question": "Question 2?",
+      "name": "Bonnie Lu",
+      "program": "2nd year, Chemistry"
+   },
+   {
+      "question": "Question 3?",
+      "name": "Connie Lu",
+      "program": "2nd year, Chemistry"
+   },
+   {
+      "question": "Question 4?",
+      "name": "Danny Lu",
+      "program": "2nd year, Chemistry"
+   }
 ]
 
 $(document).ready(function () {
@@ -10,10 +21,21 @@ $(document).ready(function () {
    questions.forEach(function (question) {
       $('#container').append(
          '<div class="card swipe-card" style="display: none;"> \
-            <div class="avatar"> \
-               <p>' + question + '</p> \
+        <div class="avatar"> \
+          <h6>' + question.question + '</h6> \
+        </div> \
+        <footer class="page-footer"> \
+          <div class="container text-center text-md-left"> \
+            <div class="row d-flex align-items-center"> \
+              <img class="swipe-profile" src="assets/placeholder-profile.png" /> \
+              <div class="col"> \
+                <p>' + question.name + '</p> \
+                <p class="text-muted">' + question.program + '</p> \
+              </div> \
             </div> \
-         </div>');
+          </div> \
+        </footer> \
+      </div>');
    });
 
    $("#like-button").on("click", function () {
