@@ -18,17 +18,16 @@
 </head>
 
 <body>
-  <button id="question-modal" type="button" class="btn btn-lg" data-toggle="modal" data-target="#exampleModal" >Filters</button>
-  
-  <div id="profiles" class="d-flex flex-column align-items-center"></div>
+  <div class="d-flex flex-column align-items-center">
+    <button id="question-modal" type="button" class="btn btn-lg btn-outline-dark" data-toggle="modal" data-target="#exampleModal" >Filters</button>
+  </div>
+  <div id="profiles" class="container-fluid align-items-center"></div>
   
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-        
-        
           <div class="container">
             <div class="row">
                 <div class="col-sm-12">
@@ -131,7 +130,7 @@
             </div>
             <div class="row">
               <div class="col">
-                <button type="submit-button" class="btn btn-secondary btn-lg" data-dismiss="modal">Submit</button>
+                <button id="submit-button" type="submit-button" class="btn btn-secondary btn-lg" data-dismiss="modal">Submit</button>
               </div>
             </div>
           </div>
