@@ -259,10 +259,9 @@ var profiles = [
 
 ];
 
-var currentProfileNumber = localStorage.getItem("proNum");
 
 window.onload = function() {
-  alert(currentProfileNumber);
+	var currentProfileNumber = localStorage.getItem("proNum");
 	var currentProfile = profiles[currentProfileNumber]
 	
 	$(".profile-full-name").text(currentProfile.FirstName + " " + currentProfile.LastName);
