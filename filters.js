@@ -68,42 +68,37 @@ var profiles = [
       "Occupation": "iQmetrix",
       "Field": "Software Engineering",
       "Year": "5"
+  },
+  {
+      "ID": "11",
+      "Name": "Ethan Fields",
+      "Occupation": "Student",
+      "Field": "Computer Engineering",
+      "Year": "3"
   }
 ];
 
 var profiles2 = [
   {
       "ID": "1",
-      "Name": "Victoria",
-      "Occupation": "Student",
-      "Field": "Computer Engineer",
-      "Year": "4",
-      "Location": "Vancouver",
-      "Gender": "Female",
-      "Meeting": "Online",
-      "Time": "Weekly"
+      "Name": "Jared Liang",
+      "Occupation": "CPSC 221 TA",
+      "Field": "Computer Science",
+      "Year": "3"
   },
   {
-      "ID": "2",
-      "Name": "Victoria",
-      "Occupation": "Student",
-      "Field": "Computer Engineer",
-      "Year": "4",
-      "Location": "Vancouver",
-      "Gender": "Female",
-      "Meeting": "Online",
-      "Time": "Weekly"
+      "ID": "6",
+      "Name": "April Kim",
+      "Occupation": "Back-end intern at Spotify",
+      "Field": "Computer Science",
+      "Year": "4"
   },
   {
-      "ID": "3",
-      "Name": "Victoria",
+      "ID": "9",
+      "Name": "Mike Jones",
       "Occupation": "Student",
-      "Field": "Computer Engineer",
-      "Year": "4",
-      "Location": "Vancouver",
-      "Gender": "Female",
-      "Meeting": "Online",
-      "Time": "Weekly"
+      "Field": "Computer Science",
+      "Year": "4"
   }
 ];
 
@@ -171,4 +166,11 @@ document.getElementById("submit-button").addEventListener("click", function() {
   divContainer.innerHTML = "";
   var table = createProfileTable(profiles2);
   divContainer.appendChild(table);
+  
+    //Clickable rows
+  $(".clickable-row").click(function() {
+    var proNum = $(this).attr("id") - 1;
+    localStorage.setItem("proNum", proNum);
+    window.open("profile.html", target="_self");
+  });
 }, false);
