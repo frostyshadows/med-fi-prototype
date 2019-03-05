@@ -21,11 +21,36 @@ var profiles = [
 		  "Time": "Weekly, Bi-weekly, Monthly",
 		  "Location": "In-person"
 	  }
+  },
+  {
+      "ID": "2",
+      "FirstName": "Emma",
+	  "LastName": "Ronalds",
+      "Field": "Computer Engineering",
+      "Year": "5",
+	  "Job": "SWE Intern",
+      "Location": "Vancouver",
+      "Gender": "Female",
+      "Meeting": "Online",
+      "Time": "Weekly",
+	  "Mentor": true,
+	  "Bio": "Research & development iPad freemium strategy.",
+	  "Links": [{"Name": "GitHub", "Link": "http://www.github.com"},
+		{"Name":"Medium", "Link": "http://www.medium.com"}],
+	  "Ask": "technical internships, job seeking, resumes, backend development, machine learning",
+	  "Affiliations": "Organizer at XDHacks \n VP Relations at ECESS",
+	  "Interests": "UX/UI, Python, Tensorflow, Javascript, Research, D3.js, skateboarding",
+	  "Availability": {
+		  "Time": "Weekly, Bi-weekly, Monthly",
+		  "Location": "In-person"
+	  }
   }
 ];
-var currentProfileNumber = 0;
+
+var currentProfileNumber = localStorage.getItem("proNum");
 
 window.onload = function() {
+  alert(currentProfileNumber);
 	var currentProfile = profiles[currentProfileNumber]
 	
 	$(".profile-full-name").text(currentProfile.FirstName + " " + currentProfile.LastName);
