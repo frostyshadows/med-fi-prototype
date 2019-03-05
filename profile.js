@@ -281,3 +281,8 @@ window.onload = function() {
 		$(".profile-links").append("<div><a class='text-dark' href='" + currentProfile.Links[i].Link + "'><u>" + currentProfile.Links[i].Name + "</u></a> </div>");
 	}
 };
+
+//Clickable rows
+$(".back-to-filter-page").click(function() {
+  window.open("filters.html", target="_self");
+});
