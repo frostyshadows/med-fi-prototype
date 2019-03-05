@@ -33,6 +33,19 @@
   cursor: hand;
 }
 
+.swipe-profile {
+  width: 50px;
+  height: 50px;
+}
+.page-footer {
+  position: absolute;
+  bottom: 1rem;
+}
+
+p {
+  margin-bottom: 0;
+}
+
 .rotate-left {
   transform: rotate(30deg) scale(0.8);
   transition: 1s;
