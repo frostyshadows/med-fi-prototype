@@ -3,7 +3,7 @@
 
 <!DOCTYPE html><html class=''>
 <head>
-<link href="message.css" type="text/css" rel="stylesheet"> 
+<link href="messages.css" type="text/css" rel="stylesheet"> 
 <link rel="stylesheet" href="bottom_nav.css">
 
 
@@ -150,6 +150,7 @@
 		</div>
 	</div>
 </div>
+<script src='//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js'></script><script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
 <script>
 
 function newMessage() {
@@ -157,7 +158,7 @@ function newMessage() {
 	if($.trim(message) == '') {
 		return false;
 	}
-	$('<li class="sent"><img src="smile.png" alt="" /><p>' + message + '</p></li>').appendTo($('.messages ul'));
+	$('<li class="sent"><p>' + message + '</p></li>').appendTo($('.messages ul'));
 	$('.message-input input').val(null);
 	$('.contact.active .preview').html('<span>You: </span>' + message);
 	$(".messages").animate({ scrollTop: $(document).height() }, "fast");
