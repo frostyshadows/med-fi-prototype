@@ -4,110 +4,70 @@ var profiles = [
       "Name": "Jared Liang",
       "Occupation": "CPSC 221 TA",
       "Field": "Computer Science",
-      "Year": "3",
-      "Location": "Vancouver",
-      "Gender": "Male",
-      "Meeting": "Online",
-      "Time": "Monthly"
+      "Year": "3"
   },
   {
       "ID": "2",
       "Name": "Erin Powell",
       "Occupation": "Work Learn Student at Emerging Media Labs",
       "Field": "COGS",
-      "Year": "4",
-      "Location": "Vancouver",
-      "Gender": "Female",
-      "Meeting": "In-person",
-      "Time": "Weekly"
+      "Year": "4"
   },
   {
       "ID": "3",
       "Name": "Jackson Chung",
       "Occupation": "Software Engineering Intern at Microsoft",
       "Field": "Computer Engineer",
-      "Year": "4",
-      "Location": "Vancouver",
-      "Gender": "Male",
-      "Meeting": "In-person",
-      "Time": "Weekly, Bi-weekly, Monthly"
+      "Year": "4"
   },
   {
       "ID": "4",
       "Name": "Penelope Shwartz",
       "Occupation": "Research Assistant at Interdisciplinary Speech Research Laboratory (ISRL)",
       "Field": "Linguistics",
-      "Year": "3",
-      "Location": "Vancouver",
-      "Gender": "Female",
-      "Meeting": "Online",
-      "Time": "Bi-weekly"
+      "Year": "3"
   },
   {
       "ID": "5",
       "Name": "Peter Summers",
       "Occupation": "Career Counselor Intern at UBC Careers",
       "Field": "Psychology",
-      "Year": "4",
-      "Location": "Vancouver",
-      "Gender": "Female",
-      "Meeting": "In-person",
-      "Time": "Weekly"
+      "Year": "4"
   },
   {
       "ID": "6",
       "Name": "April Kim",
       "Occupation": "Back-end intern at Spotify",
       "Field": "Computer Science",
-      "Year": "4",
-      "Location": "New York",
-      "Gender": "Female",
-      "Meeting": "Online",
-      "Time": "Weekly"
+      "Year": "4"
   },
   {
       "ID": "7",
       "Name": "Pari Tomar",
       "Occupation": "Research Assistant at the Natural Language Processing Lab",
       "Field": "Double major in Computer Science and Biology",
-      "Year": "2",
-      "Location": "Vancouver",
-      "Gender": "Female",
-      "Meeting": "In-person",
-      "Time": "Monthly"
+      "Year": "2"
   },
   {
       "ID": "8",
       "Name": "Colleen Summers",
       "Occupation": "Communications Assistant at EventBrite",
       "Field": "Fine Arts",
-      "Year": "4",
-      "Location": "Burnaby",
-      "Gender": "Female",
-      "Meeting": "In-person",
-      "Time": "Weekly"
+      "Year": "4"
   },
   {
       "ID": "9",
       "Name": "Mike Jones",
       "Occupation": "Student",
       "Field": "Computer Science",
-      "Year": "4",
-      "Location": "Vancouver",
-      "Gender": "Female",
-      "Meeting": "In-person",
-      "Time": "Weekly"
+      "Year": "4"
   },
   {
       "ID": "10",
       "Name": "Kyle Chen",
       "Occupation": "iQmetrix",
       "Field": "Software Engineering",
-      "Year": "5",
-      "Location": "Vancouver",
-      "Gender": "Male",
-      "Meeting": "Online",
-      "Time": "Bi-weekly"
+      "Year": "5"
   }
 ];
 
