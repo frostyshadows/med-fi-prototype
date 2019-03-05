@@ -282,7 +282,6 @@ window.onload = function() {
 	}
 };
 
-//Clickable rows
 $(".back-to-filter-page").click(function() {
   window.open("filters.html", target="_self");
 });
