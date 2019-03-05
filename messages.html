@@ -3,17 +3,13 @@
 
 <!DOCTYPE html><html class=''>
 <head>
-<link href="message2.css" type="text/css" rel="stylesheet"> 
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="message.css" type="text/css" rel="stylesheet"> 
+<link rel="stylesheet" href="bottom_nav.css">
 
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
 <script src="https://use.typekit.net/hoy3lrg.js"></script>
-<!-- <script>try{Typekit.load({ async: true });}catch(e){}</script> -->
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css'><link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css'>
 <style class="cp-pen-styles">
 </style>
 </head>
@@ -23,17 +19,17 @@
 <div id="frame">
 	<div id="sidepanel">
 		<div id="profile">
-			
-				<img id="profile-img" src="smile.png">
-				<p>Summers Day</p>
+			<div class="wrap">
+				<p>Messaging</p>
 				
+			</div>
 		</div>
 
 		<div id="contacts">
 			<ul>
 				<li class="contact">
 					<div class="wrap">
-						<img src="smile2.png" alt="" />
+						<img class="dot", style="background-color: #87ceeb">
 						<div class="meta">
 							<p class="name">Daisy Springer</p>
 							<p class="preview">At per iisque incorrupte, est laboramus incorrupte an. Iudicabit maiestatis constituam eu sed, eirmod discere probatus at ius, an elitr posidonium disputando mea. Vivendum dignissim duo te</p>
@@ -42,7 +38,7 @@
 				</li>
 				<li class="contact">
 					<div class="wrap">
-						<img src="smile3.png" alt="" />
+						<img class="dot", style="background-color: #87ceeb">
 						<div class="meta">
 							<p class="name">Tonya Winters</p>
 							<p class="preview">Lorem ipsum dolor sit amet, at nullam impedit iracundia cum. Reprimique philosophia cum te, in audiam patrioque vim. </p>
@@ -51,7 +47,7 @@
 				</li>
 				<li class="contact">
 					<div class="wrap">
-						<img src="smile4.png" alt="" />
+						<img class="dot", style="background-color: #87ceeb">
 						<div class="meta">
 							<p class="name">Autumn Fells</p>
 							<p class="preview">Possim fabulas necessitatibus eos id, et lorem possit adolescens sed, an usu impetus rationibus. Tollit efficiantur ea has, libris aperiri alienum quo ad.</p>
@@ -126,27 +122,24 @@
 	</div>
 	<div class="content">
 		<div class="contact-profile">
-			<img src="smile2.png" alt="" />
 			<p>Daisy Springer</p>
 		</div>
 		<div class="messages">
 			<ul>
 				<li class="sent">
-					<img src="smile.png" alt="" />
+
 					<p>talking in a message</p>
 				</li>
 				<li class="replies">
-					<img src="smile2.png" alt="" />
+
 					<p>as an example</p>
 				</li>
 				<li class="replies">
-					<img src="smile2.png" alt="" />
 					<p>1, 2, 3, go</p>
 				</li>
-        <li class="sent">
-          <img src="smile.png" alt="" />
-          <p>we can send these back and forth all day</p>
-        </li>
+		        <li class="sent">
+		          <p>we can send these back and forth all day</p>
+		        </li>
 			</ul>
 		</div>
 		<div class="message-input">
@@ -157,8 +150,7 @@
 		</div>
 	</div>
 </div>
-<script src='//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js'></script><script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-<script >
+<script>
 
 function newMessage() {
 	message = $(".message-input input").val();
@@ -183,4 +175,6 @@ $(window).on('keydown', function(e) {
 });
 
 </script>
+
+<script src="bottom_nav.js"></script>
 </body></html>
