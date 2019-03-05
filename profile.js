@@ -255,22 +255,20 @@ var profiles = [
 		  "Time": "Weekly",
 		  "Location": "In-person"
 	  }
-  },
-
+  }
 ];
-
 
 window.onload = function() {
 	var currentProfileNumber = localStorage.getItem("proNum");
 	var currentProfile = profiles[currentProfileNumber]
-	
+
 	$(".profile-full-name").text(currentProfile.FirstName + " " + currentProfile.LastName);
 	$(".profile-job").text(currentProfile.Job);
 	$(".profile-school").text(currentProfile.Field + ", Year " + currentProfile.Year); // didn't want to have to deal with figuring if -th or -st comes after year number lol
 	if (!currentProfile.Mentor) {
 		$(".profile-mentorship").hide();
 	}
-	
+
 	$(".profile-location").text(currentProfile.Location);
 	$(".profile-bio").text(currentProfile.Bio);
 	$(".profile-ask").text(currentProfile.Ask);
@@ -278,7 +276,7 @@ window.onload = function() {
 	$(".profile-interests").text(currentProfile.Interests);
 	$(".profile-availability-location").text(currentProfile.Availability.Location);
 	$(".profile-availability-time").text(currentProfile.Availability.Time);
-	
+
 	for (var i = 0; i < currentProfile.Links.length; i++) {
 		$(".profile-links").append("<div><a class='text-dark' href='" + currentProfile.Links[i].Link + "'><u>" + currentProfile.Links[i].Name + "</u></a> </div>");
 	}
