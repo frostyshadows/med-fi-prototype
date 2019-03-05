@@ -14,6 +14,7 @@
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/css/bootstrap-select.min.css">
   <link href="filters.css" rel="stylesheet">
+  <link rel="stylesheet" href="bottom_nav.css">
   
 </head>
 
@@ -22,6 +23,15 @@
     <button id="question-modal" type="button" class="btn btn-lg btn-outline-dark" data-toggle="modal" data-target="#exampleModal" >Filters</button>
   </div>
   <div id="profiles" class="container-fluid align-items-center border-top"></div>
+
+  <footer class="page-footer fixed-bottom">
+    <div class="d-flex flex-row justify-content-around">
+      <img class="search-button" src="assets/search_black.png" />
+      <img class="mail-button" src="assets/mail_grey.png" />
+      <img class="help-button" src="assets/help_grey.png" />
+      <img class="person-button" src="assets/person_grey.png" />
+    </div>
+  </footer>
   
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -144,6 +154,7 @@
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="filters.js"></script>
+  <script src="bottom_nav.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/js/bootstrap-select.min.js"></script>
 
 </body>

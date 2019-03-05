@@ -1,17 +1,42 @@
 var questions = [{
-      "question": "Question 2?",
-      "name": "Bonnie Lu",
-      "program": "2nd year, Chemistry"
+      "question": "Where do you find internships outside of the CS co-op job board?",
+      "name": "Mark Ng",
+      "program": "2nd year, Computer Science"
    },
    {
-      "question": "Question 3?",
-      "name": "Connie Lu",
-      "program": "2nd year, Chemistry"
+      "question": "Which city are you moving to after graduation, and why?",
+      "name": "Aylen Moore",
+      "program": "4th year, Computer Engineering"
    },
    {
-      "question": "Question 4?",
-      "name": "Danny Lu",
-      "program": "2nd year, Chemistry"
+      "question": "Do you think personal projects helped you land an internship? What made your personal project impressive?",
+      "name": "Nadia Winters",
+      "program": "2nd year, Computer Science and Physics combined major"
+   },
+   {
+      "question": "Has anyone minored in Computer Science? How has your experience been, and do you think it's worth it?",
+      "name": "Chris Ramsay",
+      "program": "1st year, Undeclared"
+   },
+   {
+      "question": "Which graduate school should I attend for Data Science?",
+      "name": "Jia Lin Sung",
+      "program": "4th year, Statistics"
+   },
+   {
+      "question": "What did you wish you know when you wrote your first resume?",
+      "name": "Tim Baker",
+      "program": "1st year, Undeclared"
+   },
+   {
+      "question": "Should I focus on back-end or front-end development?",
+      "name": "Adam Lin",
+      "program": "3rd year, Electrical Engineering"
+   },
+   {
+      "question": "How do I get into User Experience Design with a development background?",
+      "name": "Verona Chen",
+      "program": "2nd year, Computer Science"
    }
 ]
 
@@ -28,7 +53,7 @@ $(document).ready(function () {
           <div class="container text-center text-md-left"> \
             <div class="row d-flex align-items-center"> \
               <img class="swipe-profile" src="assets/placeholder-profile.png" /> \
-              <div class="col"> \
+              <div class="col d-flex flex-column align-items-start"> \
                 <p>' + question.name + '</p> \
                 <p class="text-muted">' + question.program + '</p> \
               </div> \

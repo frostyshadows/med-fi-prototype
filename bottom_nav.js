@@ -5,7 +5,7 @@ $(document).ready(function () {
   });
 
   $(".mail-button").on("click", function () {
-    window.open("#", target="_self");
+    window.open("messages.html", target="_self");
   });
 
   $(".help-button").on("click", function () {
