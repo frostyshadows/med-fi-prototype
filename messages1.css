@@ -1,0 +1,171 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #fff;
+  font-family: "arial";
+  font-size: 1em;
+  letter-spacing: 0.1px;
+  color: #32465a;
+  text-rendering: optimizeLegibility;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  -webkit-font-smoothing: antialiased;
+}
+
+#frame {
+  width: 100%;
+/*  min-width: 360px;
+  max-width: 1000px;*/
+  height: 100vh;
+  min-height: 300px;
+  max-height: 720px;
+  background: #E6EAEA;
+}
+@media screen and (max-width: 360px) {
+  #frame {
+    width: 100%;
+    height: 100vh;
+  }
+}
+#frame #sidepanel {
+  float: left;
+  width: 100%;
+  height: 100%;
+  background: #f5f5f5;
+  color: #2c3e50;
+  overflow: hidden;
+  position: relative;
+}
+
+#frame #sidepanel #profile {
+  width: 80%;
+  margin: 25px auto;
+  font-family: "arial";
+  font-size: 2em;
+}
+
+
+#frame #sidepanel #profile .wrap {
+  height: 50px;
+  line-height: 60px;
+  overflow: hidden;
+  -moz-transition: 0.3s height ease;
+  -o-transition: 0.3s height ease;
+  -webkit-transition: 0.3s height ease;
+  transition: 0.3s height ease;
+}
+
+@media screen and (max-width: 735px) {
+  #frame #sidepanel #profile .wrap {
+    height: 55px;
+  }
+}
+
+#frame #sidepanel #profile .wrap img {
+  width: 50px;
+  border-radius: 50%;
+  padding: 3px;
+  border: 2px solid #e74c3c;
+  height: auto;
+  float: left;
+  cursor: pointer;
+  -moz-transition: 0.3s border ease;
+  -o-transition: 0.3s border ease;
+  -webkit-transition: 0.3s border ease;
+  transition: 0.3s border ease;
+}
+
+
+#frame #sidepanel #profile .wrap #expanded input:focus {
+  background: #435f7a;
+}
+
+#frame #sidepanel #contacts {
+  height: calc(100% - 142px);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 735px) {
+  #frame #sidepanel #contacts {
+    height: calc(100% - 149px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  #frame #sidepanel #contacts::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+
+#frame #sidepanel #contacts.expanded {
+  height: calc(100% - 334px);
+}
+
+#frame #sidepanel #contacts::-webkit-scrollbar {
+  width: 8px;
+  background: #2c3e50;
+}
+
+#frame #sidepanel #contacts::-webkit-scrollbar-thumb {
+  background-color: #243140;
+}
+
+#frame #sidepanel #contacts ul li.contact {
+  position: relative;
+  padding: 10px 0 15px 0;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+@media screen and (max-width: 735px) {
+  #frame #sidepanel #contacts ul li.contact {
+    padding: 6px 0 46px 8px;
+  }
+}
+
+#frame #sidepanel #contacts ul li.contact:hover {
+  background: #dcdcdc;
+}
+
+#frame #sidepanel #contacts ul li.contact .wrap {
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+
+#frame #sidepanel #contacts ul li.contact .wrap img {
+  width: 40px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 10px;
+
+}
+
+#frame #sidepanel #contacts ul li.contact .wrap .meta {
+  padding: 5px 0 0 0;
+}
+
+#frame #sidepanel #contacts ul li.contact .wrap .meta .name {
+  font-weight: bold;
+  font-family: "arial";
+
+}
+
+#frame #sidepanel #contacts ul li.contact .wrap .meta .preview {
+  margin: 5px 0 0 ;
+  padding: 0 0 5px;
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: "arial";
+}
+
+.dot {
+  height: 40px;
+  width: 50px;
+  background-color: #6F8466;
+  border-radius: 50%;
+  display: inline-block;
+}
