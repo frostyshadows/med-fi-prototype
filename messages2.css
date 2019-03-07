@@ -52,7 +52,7 @@ body {
 } 
 
 #frame .content .messages {
-  height: 560px;
+  height: 510px;
   float: top;
   overflow-y: scroll;
   overflow-y: visible;
@@ -130,6 +130,6 @@ body {
 
 #footer {
     position: fixed;
-    bottom: 0;
+    bottom: 45px;
     width: 100%;
 }

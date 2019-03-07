@@ -66,10 +66,8 @@ body {
   width: 50px;
   border-radius: 50%;
   padding: 3px;
-  border: 2px solid #e74c3c;
   height: auto;
   float: left;
-  cursor: pointer;
   -moz-transition: 0.3s border ease;
   -o-transition: 0.3s border ease;
   -webkit-transition: 0.3s border ease;
@@ -87,9 +85,9 @@ body {
   overflow-x: hidden;
 }
 
-@media screen and (max-width: 735px) {
+@media screen and (max-width: 755px) {
   #frame #sidepanel #contacts {
-    height: calc(100% - 149px);
+    height: 90%;
     overflow-y: scroll;
     overflow-x: hidden;
   }
@@ -98,10 +96,6 @@ body {
   }
 }
 
-
-#frame #sidepanel #contacts.expanded {
-  height: calc(100% - 334px);
-}
 
 #frame #sidepanel #contacts::-webkit-scrollbar {
   width: 8px;
@@ -113,14 +107,14 @@ body {
 }
 
 #frame #sidepanel #contacts ul li.contact {
-  position: relative;
   padding: 10px 0 15px 0;
-  font-size: 0.9em;
-  cursor: pointer;
+  font-size: 1em;
 }
-@media screen and (max-width: 735px) {
+
+@media screen and (max-width: 785px) {
   #frame #sidepanel #contacts ul li.contact {
-    padding: 6px 0 46px 8px;
+    padding: 5px 0 40px 0px;
+    list-style-type: none;
   }
 }
 
@@ -154,7 +148,7 @@ body {
 
 #frame #sidepanel #contacts ul li.contact .wrap .meta .preview {
   margin: 5px 0 0 ;
-  padding: 0 0 5px;
+  padding: 5px 20px 5px 0px;
   font-weight: 400;
   white-space: nowrap;
   overflow: hidden;
