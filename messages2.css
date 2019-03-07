@@ -52,9 +52,10 @@ body {
 } 
 
 #frame .content .messages {
-  height: auto;
+  height: 560px;
+  float: top;
   overflow-y: scroll;
-  overflow-y: hidden;
+  overflow-y: visible;
   overflow-x: hidden;
   font-family: "arial";
 }
