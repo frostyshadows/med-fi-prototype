@@ -39,10 +39,13 @@ body {
 }
 
 #frame #sidepanel #profile {
-  width: 80%;
-  margin: 25px auto;
+  width: 100%;
+  padding: 20px 0px 20px 30px;
   font-family: "arial";
   font-size: 2em;
+  color: black;
+  margin-bottom: 5px;
+  background-color: #f0f0f0;
 }
 
 
