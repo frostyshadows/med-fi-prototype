@@ -103,6 +103,8 @@ function swipeRight(card) {
    } else {
       $(card).next().removeClass('rotate-left rotate-right').fadeIn(400);
    }
+   // $("#exampleModalLabel").text(card.innerHTML);
+   $("#exampleModal").modal('show');
 }
 
 function swipeLeft(card) {
