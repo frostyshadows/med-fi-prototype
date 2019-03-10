@@ -47,14 +47,14 @@ $(document).ready(function () {
       $('#container').append(
          '<div class="card swipe-card" style="display: none;"> \
         <div class="avatar"> \
-          <h6>' + question.question + '</h6> \
+          <h6 class="card-question">' + question.question + '</h6> \
         </div> \
         <footer class="page-footer"> \
           <div class="container text-center text-md-left"> \
             <div class="row d-flex align-items-center"> \
               <img class="swipe-profile" src="assets/placeholder-profile.png" /> \
               <div class="col d-flex flex-column align-items-start"> \
-                <p>' + question.name + '</p> \
+                <p class="asker-name">' + question.name + '</p> \
                 <p class="text-muted">' + question.program + '</p> \
               </div> \
             </div> \
@@ -90,10 +90,22 @@ $(document).ready(function () {
    $(".swipe-card").on("swipeleft", function () {
       swipeLeft(this);
    });
+   
+   // Start new chat with question asker when user answers question
+  document.getElementById("submit-button").addEventListener("click", function() {
+    console.log("thing happening");
+    let questionText = $("#answerQuestionModalLabel").text();
+    let answerText = $("#question-form-input").val();
+  
+    localStorage.setItem("cardQuestion", questionText);
+    localStorage.setItem("cardAnswer", answerText);
+    window.open("message_from_card.html", target="_self");
+  }, false);
 
 });
 
 function swipeRight(card) {
+
    $(card).addClass('rotate-left').delay(700).fadeOut(1);
    $('.swipe-card').find('.status').remove();
 
@@ -104,7 +116,11 @@ function swipeRight(card) {
       $(card).next().removeClass('rotate-left rotate-right').fadeIn(400);
    }
    // $("#exampleModalLabel").text(card.innerHTML);
+   var cardQuestion = $(card).find(".card-question").text();
+   var cardAsker = $(card).find(".asker-name").text();
+   localStorage.setItem("cardAsker", cardAsker);
    $("#exampleModal").modal('show');
+   $("#answerQuestionModalLabel").text(cardQuestion);
 }
 
 function swipeLeft(card) {
@@ -118,3 +134,5 @@ function swipeLeft(card) {
       $(card).next().removeClass('rotate-left rotate-right').fadeIn(400);
    }
 }
+
+
