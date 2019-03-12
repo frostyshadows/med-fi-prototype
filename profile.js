@@ -263,7 +263,7 @@ window.onload = function() {
 	var currentProfile = profiles[currentProfileNumber]
   
   //load profile image for select profiles
-  alert(currentProfileNumber);
+  // alert(currentProfileNumber);
   if (currentProfileNumber == 0 || currentProfileNumber == 5 ||  currentProfileNumber == 8){
     var profileImg = document.getElementById("profile-image");
     var imageStr = "assets/" + currentProfileNumber + ".png";
