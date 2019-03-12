@@ -128,11 +128,13 @@ function swipeLeft(card) {
    $('.swipe-card').find('.status').remove();
    $(card).append('<div class="status dislike">Dislike!</div>');
 
-   if ($(card).is(':last-child')) {
-      $('.swipe-card:nth-child(1)').removeClass('rotate-left rotate-right').fadeIn(300);
-   } else {
+   if (!$(card).is(':last-child')) {
       $(card).next().removeClass('rotate-left rotate-right').fadeIn(400);
    }
+
+   setTimeout(function (){
+      card.outerHTML = "";
+   }, 1000)
 }
 
 
