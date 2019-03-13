@@ -117,7 +117,7 @@ function createProfileTable(profiles) {
     //var tr = table.insertRow(-1);
     //var tr = document.createElement('div');
     //tr.setAttribute('class', 'row');
-    var id = profiles[i][col[0]];
+    var id = profiles[i][col[0]] - 1;
     var name = profiles[i][col[1]];
     var occupation = profiles[i][col[2]];
     var field = profiles[i][col[3]];
@@ -125,7 +125,7 @@ function createProfileTable(profiles) {
     table.innerHTML += 
       '<div class="clickable-row row border-bottom" id="'+ id +'"> \
         <div class="col-2"> \
-          <img class="profile-image" src="assets/add_question.png" alt="Profile image"> \
+          <img class="profile-image img-fluid" src="assets/' + id + '.png" alt="Profile image"> \
          </div> \
          <div class="col-10"> \
           <div class="row">'+ name + '</div> \
@@ -155,7 +155,7 @@ $(".btn").click(function(){
 
 //Clickable rows
 $(".clickable-row").click(function() {
-  var proNum = $(this).attr("id") - 1;
+  var proNum = $(this).attr("id");
   localStorage.setItem("proNum", proNum);
   window.open("profile.html", target="_self");
 });
