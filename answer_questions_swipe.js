@@ -40,6 +40,8 @@ var questions = [{
    }
 ]
 
+var cardOnModal = {};
+
 $(document).ready(function () {
 
    // add a card for each question
@@ -93,38 +95,51 @@ $(document).ready(function () {
    
    // Start new chat with question asker when user answers question
   document.getElementById("submit-button").addEventListener("click", function() {
-    console.log("thing happening");
     let questionText = $("#answerQuestionModalLabel").text();
     let answerText = $("#question-form-input").val();
+	submitCard(cardOnModal);
   
     localStorage.setItem("cardQuestion", questionText);
     localStorage.setItem("cardAnswer", answerText);
-    window.open("message_from_card.html", target="_self");
+  }, false);
+  
+  // Start new chat with question asker when user answers question
+  document.getElementById("cancel-button").addEventListener("click", function() {
+	unswipe(cardOnModal);
   }, false);
 
 });
 
 function swipeRight(card) {
 
-   $(card).addClass('rotate-left').delay(700).fadeOut(1);
+   $(card).removeClass('rotated-left unrotate-left').addClass('rotate-left').delay(700).fadeOut(1);
    $('.swipe-card').find('.status').remove();
 
    $(card).append('<div class="status like">Like!</div>');
-   if ($(card).is(':last-child')) {
-      $('.swipe-card:nth-child(1)').removeClass('rotate-left rotate-right').fadeIn(300);
-   } else {
-      $(card).next().removeClass('rotate-left rotate-right').fadeIn(400);
-   }
-   // $("#exampleModalLabel").text(card.innerHTML);
    var cardQuestion = $(card).find(".card-question").text();
    var cardAsker = $(card).find(".asker-name").text();
+   cardOnModal = card;
    localStorage.setItem("cardAsker", cardAsker);
    $("#exampleModal").modal('show');
    $("#answerQuestionModalLabel").text(cardQuestion);
 }
 
+function unswipe(card) {
+	$(card).removeClass('rotate-left rotate-right').addClass('rotated-left').fadeIn(300);
+	$(card).addClass('unrotate-left');
+	$('.swipe-card').find('.status').remove();
+}
+
+function submitCard(card) {
+	if ($(card).is(':last-child')) {
+		$('.swipe-card:nth-child(1)').removeClass('rotate-left rotate-right').fadeIn(300);
+	} else {
+		$(card).next().removeClass('rotate-left rotate-right').fadeIn(400);
+	}
+}
+
 function swipeLeft(card) {
-   $(card).addClass('rotate-right').delay(700).fadeOut(1);
+   $(card).removeClass('rotated-left unrotate-left').addClass('rotate-right').delay(700).fadeOut(1);
    $('.swipe-card').find('.status').remove();
    $(card).append('<div class="status dislike">Dislike!</div>');
 

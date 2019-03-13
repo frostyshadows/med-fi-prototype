@@ -55,6 +55,19 @@ p {
   z-index: 10;
 }
 
+.rotated-left {
+	transform: rotate(30deg) scale(0.8);
+	margin-left: 400px;
+}
+
+.unrotate-left {
+	transform: rotate(0deg) scale(1);
+	transition: 0.5s;
+	opacity: 1;
+	margin-left: 0px;
+	z-index: 10;
+}
+
 .rotate-right {
   transform: rotate(-30deg) scale(0.8);
   transition: 1s;
