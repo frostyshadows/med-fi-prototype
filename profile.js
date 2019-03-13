@@ -262,11 +262,12 @@ window.onload = function() {
 	var currentProfileNumber = localStorage.getItem("proNum");
 	var currentProfile = profiles[currentProfileNumber]
   
-  //load profile image 
-  var profileImg = document.getElementById("profile-image");
-  var imageStr = "assets/" + currentProfileNumber + ".png";
-  profileImg.setAttribute("src", imageStr);
-
+  //load profile image for select profiles
+  if (currentProfileNumber == 0 || currentProfileNumber == 5 ||  currentProfileNumber == 8){
+    var profileImg = document.getElementById("profile-image");
+    var imageStr = "assets/" + currentProfileNumber + ".png";
+    profileImg.setAttribute("src", imageStr);
+  }
 
 	$(".profile-full-name").text(currentProfile.FirstName + " " + currentProfile.LastName);
 	$(".profile-job").text(currentProfile.Job);
