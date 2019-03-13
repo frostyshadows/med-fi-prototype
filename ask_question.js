@@ -20,4 +20,7 @@ document.getElementById("submit-button").addEventListener("click", function() {
     </div> \
   </div> \
 </div>';
+
+// Clear modal text
+$("#question-form-input").val("");
 }, false);
