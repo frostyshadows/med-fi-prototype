@@ -264,8 +264,12 @@ window.onload = function() {
 
   //load profile image 
   var profileImg = document.getElementById("profile-image");
-  var imageStr = "assets/" + currentProfileNumber + ".png";
-  profileImg.setAttribute("src", imageStr);
+  if (profileImg) {
+    var imageStr = "assets/" + currentProfileNumber + ".png";
+    if (profileImg.hasAttribute("src")) {
+      profileImg.setAttribute("src", imageStr);
+    }
+  }
 
 	$(".profile-full-name").text(currentProfile.FirstName + " " + currentProfile.LastName);
 	$(".profile-job").text(currentProfile.Job);
