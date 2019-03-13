@@ -95,12 +95,7 @@ $(document).ready(function () {
    
    // Start new chat with question asker when user answers question
   document.getElementById("submit-button").addEventListener("click", function() {
-    let questionText = $("#answerQuestionModalLabel").text();
-    let answerText = $("#question-form-input").val();
 	submitCard(cardOnModal);
-  
-    localStorage.setItem("cardQuestion", questionText);
-    localStorage.setItem("cardAnswer", answerText);
   }, false);
   
   // Start new chat with question asker when user answers question
@@ -117,9 +112,7 @@ function swipeRight(card) {
 
    $(card).append('<div class="status like">Like!</div>');
    var cardQuestion = $(card).find(".card-question").text();
-   var cardAsker = $(card).find(".asker-name").text();
    cardOnModal = card;
-   localStorage.setItem("cardAsker", cardAsker);
    $("#exampleModal").modal('show');
    $("#answerQuestionModalLabel").text(cardQuestion);
 }
@@ -136,6 +129,16 @@ function submitCard(card) {
 	} else {
 		$(card).next().removeClass('rotate-left rotate-right').fadeIn(400);
 	}
+	
+	$('#conversation-name').text($(card).find(".asker-name").text());
+	
+	$('#snackbar').addClass('show');
+	
+	// After 3 seconds, remove the show class from DIV
+	setTimeout(function(){ 
+		$('#snackbar').removeClass('show'); 
+	}, 3000);
+	//Create a bottom toast letting the user know a convo has been created
 }
 
 function swipeLeft(card) {
