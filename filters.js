@@ -169,7 +169,7 @@ document.getElementById("submit-button").addEventListener("click", function() {
   
     //Clickable rows
   $(".clickable-row").click(function() {
-    var proNum = $(this).attr("id")-1;
+    var proNum = $(this).attr("id");
     localStorage.setItem("proNum", proNum);
     window.open("profile.html", target="_self");
   });
