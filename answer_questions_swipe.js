@@ -130,7 +130,9 @@ function submitCard(card) {
 		$(card).next().removeClass('rotate-left rotate-right').fadeIn(400);
 	}
 	
-	$('#conversation-name').text($(card).find(".asker-name").text());
+   $('#conversation-name').text($(card).find(".asker-name").text());
+   
+   $("#question-form-input").val("");
 	
 	$('#snackbar').addClass('show');
 	
